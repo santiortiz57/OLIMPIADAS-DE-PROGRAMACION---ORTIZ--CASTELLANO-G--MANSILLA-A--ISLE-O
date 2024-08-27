@@ -1,0 +1,171 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f1f1f1; /* Gris muy claro para el fondo */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Gris oscuro para el texto */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff; /* Blanco */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+h2 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333; /* Gris oscuro */
+    font-size: 36px;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #e0e0e0; /* Borde gris claro */
+    padding-bottom: 15px;
+    background: linear-gradient(to right, #f7b42c, #fc575e); /* Gradiente de colores vibrantes */
+    text-align: center;
+    border-radius: 8px;
+    padding: 25px;
+    font-weight: bold;
+}
+
+/* Estilos para el listado de productos */
+.products, .cart {
+    margin-top: 40px;
+}
+
+.products ul, .cart ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.products li, .cart li {
+    background: #ffffff; /* Blanco */
+    padding: 20px;
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px; /* Bordes más suaves */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones para efectos */
+}
+
+.products li:hover, .cart li:hover {
+    transform: translateY(-8px); /* Levantar el elemento al pasar el ratón */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más destacada */
+}
+
+.products li img, .cart li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* Bordes más suaves */
+    margin-bottom: 15px;
+}
+
+.products li h3, .cart li h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #333; /* Gris oscuro */
+}
+
+.products li p, .cart li p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666; /* Gris medio */
+}
+
+.products li a, .cart li a {
+    color: #ffffff; /* Blanco */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: auto;
+    padding: 12px 30px; /* Aumentar el padding para más énfasis */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradiente de colores vibrantes */
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s; /* Transición para efectos */
+    display: inline-block;
+}
+
+.products li a:hover, .cart li a:hover {
+    background: linear-gradient(to right, #ff6f61, #d54c80); /* Gradiente más oscuro para hover */
+    transform: scale(1.05); /* Escalar ligeramente el botón en hover */
+}
+
+/* Estilo para el carrito de compras */
+.cart p {
+    font-weight: bold;
+    font-size: 24px;
+    color: #dc3545; /* Rojo para alertas */
+    text-align: right;
+    margin-top: 30px;
+    border-top: 2px solid #e0e0e0; /* Borde gris claro */
+    padding-top: 15px;
+}
+
+/* Estilos para alertas de éxito */
+.success-alert {
+    padding: 20px;
+    margin-top: 30px;
+    color: #ffffff; /* Blanco */
+    background-color: #28a745; /* Verde brillante */
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    padding: 20px 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ffffff, #f9f9f9); /* Gradiente de colores sutiles */
+    border-bottom: 1px solid #e0e0e0; /* Borde gris claro */
+}
+
+nav .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333; /* Gris oscuro */
+}
+
+nav a {
+    color: #333; /* Gris oscuro */
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s; /* Transiciones para efectos */
+}
+
+nav a:hover {
+    background-color: #f1f1f1; /* Gris claro */
+    color: #007bff; /* Azul brillante para hover */
+}
+
+nav a.active {
+    background-color: #007bff; /* Azul brillante */
+    color: #ffffff; /* Blanco */
+}
+
+.carritostyles {
+    color: #ffffff; /* Blanco */
+    background-color: #007bff; /* Azul brillante */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
